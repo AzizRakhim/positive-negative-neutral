@@ -352,7 +352,7 @@ template {
 
 body {
   font-family: sans-serif;
-  background-color: #fff;
+  background-color: #0e70ba;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,11 +361,66 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: wrap column;
           flex-flow: wrap column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.main-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.main-form {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.main-number {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+.main-number:focus {
+  outline: none;
+  border-bottom: 2px solid #000;
+}
+
+.main-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.main-texts {
+  margin-bottom: 10px;
+}
+
+.main-text {
+  margin-right: 10px;
+  text-transform: capitalize;
+  font-size: 12px;
+  color: #979494;
+  cursor: pointer;
+}
+
+.main-text.active {
+  color: #000;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
